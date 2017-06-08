@@ -182,6 +182,8 @@ var i = 0             // <-- semicolon optional
 
 // You shouldn’t put a semicolon after a closing curly bracket }. The only exceptions are assignment statements, such as var obj = {};  
 
+// Some consider it a good habit to terminate each statement with a ; – that makes your code a little easier to parse, and to compress: if you remove line breaks you needn't worry about several statements ending up unseparated on the same line.
+
 // *******************************************************************************
 
 // ************* what will the results of these console logs be?
@@ -206,7 +208,7 @@ console.log(b)
 var obj = {
   flavor: 'vanilla',
   test: function() {
-    // =====> return obj.flavor
+    // =====> return this.flavor
   }
 }
 obj.test() 
