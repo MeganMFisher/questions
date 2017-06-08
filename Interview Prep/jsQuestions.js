@@ -104,6 +104,28 @@ changeParam(a, b, c);
 
 // var vs let?
 
+// var vs. let
+// The var keyword behaves differently in function scopes and block scopes. A variable declared with var in a function scope can’t be accessed outside that function scope.
+
+function iHaveScope() {
+  var secret = 42;
+}
+secret; // ReferenceError: secret is not defined (in this scope)
+
+// A variable declared with var in a block scope is available outside of that block scope.
+
+for (var i=0; i<10; i++) {
+  // block scope for the for statement
+}
+console.log(i) // => 10 
+
+// Variables declared with let inside a block scope are only accessible inside that scope, making let the ideal solution to the for loop index variable scope problem. If we use let to declare the i variable in a for loop, that variable will only be available inside the for loop.
+
+for (let i=0; i<10; i++) {
+  // block scope for the for statement
+}
+console.log(i) // ReferenceError: i is not defined 
+
 
 function iHaveScope() {
   // local function scope
@@ -111,6 +133,7 @@ function iHaveScope() {
     // nested local function scope
   }
 }
+
 
 
 
