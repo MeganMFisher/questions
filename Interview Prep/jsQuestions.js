@@ -148,6 +148,53 @@ function iHaveScope() {
 
 
 
+
+
 // *******************************************************************************
 
 // *************  are semi-colons important in javascript? 
+
+
+
+
+// *******************************************************************************
+
+// ************* what will the results of these console logs be?
+
+(function test() { 
+  var a = 3; //a is declared within the function can't be accessed outside.
+  b = a;     //b is a global variable so it can be accessed outside the                                 function.
+})()
+
+console.log(a) 
+  //undefined
+console.log(b)
+  // 3
+
+
+
+
+// *******************************************************************************
+
+// ************* How can you get the result to be vanilla?
+
+var obj = {
+  flavor: 'vanilla',
+  test: function() {
+    // =====> return obj.flavor
+  }
+}
+obj.test() 
+
+
+
+
+// *******************************************************************************
+
+// ************* Assuming the ajax code is correct and working, what potential problems do you see with this code? .... While leaving the keypress, how would you make it so when the user pauses their typing, it would autosave?
+
+$(document).ready(function() {
+  $('input').keypress(function() {
+    //ajax call here
+  })
+})
