@@ -1,0 +1,58 @@
+
+/***************** How would you set up your divs to recreate this section */
+
+/***************** Use display flex to recreate this display */
+
+/*Box with three small boxes equally spaced...*/
+
+/*--------------------------------
+|   ----       ----       ----   |
+|  |    |     |    |     |    |  |
+|   ----       ----       ----   |
+----------------------------------*/
+
+.firm {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/****************** Explain psuedo classes and their use?*/
+
+/* CSS Pseudo Classes 
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus*/
+
+:hover, :focus, :nth-child(), :nth-last-child(), :active, 
+
+/*CSS Pseudo Elements */
+
+div::before {
+   /*Insert content before every <p> element*/
+}
+
+div::after {
+    /*Insert content after every <p> element*/
+}
+
+
+
+/******************* Explain 'child' class in css?*/
+
+div > p {
+  /*Selects all <p> elements where the parent is a <div> element*/
+}
+
+div img {
+  /*Selects all <p> elements inside <div> elements*/
+}
+
+/*div is the parent of any p tags within it making them its 'children'*/
+
