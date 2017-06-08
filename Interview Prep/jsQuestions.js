@@ -80,6 +80,15 @@ function ads(b) {
 ads(a)
 console.log(a) //{baaa: 'maaa'}
 
+
+var a = ['baaa', 'waaa']
+function ads(b) {
+  b[0] = 'maaa'
+}
+ads(a)
+console.log(a) //['maaa', 'waaa']
+
+
 //Pass by reference does work
 
 // Javascript always passes by value. However, if you pass an object to a function, the "value" is really a reference to that object, so the function can modify that object's properties but not cause the variable outside the function to point to some other object.
@@ -154,8 +163,24 @@ function iHaveScope() {
 
 // *************  are semi-colons important in javascript? 
 
+// The semicolon in JavaScript is used to separate statements, but it can be omitted if the statement is followed by a line break (or there’s only one statement in a {block}).
 
+var i;                        // variable declaration
+i = 5;                        // value assignment
+i = i + 1;                    // value assignment
+i++;                          // same as above
+var x = 9;                    // declaration & assignment
+var fun = function() {...};   // var decl., assignmt, and func. defin.
+alert("hi");                  // function call
 
+// All of these statements can end with a ; but none of them must. The semicolon is only obligatory when you have two or more statements on the same line:
+
+var i = 0; i++        // <-- semicolon obligatory
+                      //     (but optional before newline)
+var i = 0             // <-- semicolon optional
+    i++               // <-- semicolon optional
+
+// You shouldn’t put a semicolon after a closing curly bracket }. The only exceptions are assignment statements, such as var obj = {};  
 
 // *******************************************************************************
 
