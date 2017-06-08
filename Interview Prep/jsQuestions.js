@@ -3,6 +3,9 @@
 console.log(false == '0') //loose equals - 0 is falsy so it's true
 console.log(false === '0') //Strict equals - Word false is not equal to 0
 
+
+// *******************************************************************************
+
 // ************* What will each of these output?
 
 
@@ -15,6 +18,9 @@ console.log("A" - "B" + 2) //NaN can't minus letters or number from NaN
 
 // in JS with '+' if they aren't numbers it assumes you want concatination. 
 // in JS '-' assumes you are trying to 'do math'
+
+
+// *******************************************************************************
 
 // ************* What will this output?
 
@@ -38,7 +44,7 @@ for(var i = 0; i < 5; i++) {
 
 
 
-
+// *******************************************************************************
 
 // ************* What is the outcome of each of these functions?
 
@@ -53,6 +59,7 @@ function returnQuestion() {
 }
 returnQuestion()
 
+// *******************************************************************************
 
 // ************* Difference between Passing by Value and Passing by Reference?
 
@@ -99,10 +106,9 @@ changeParam(a, b, c);
 // c definitely doesn't point to the new object created as the last line
 // of the function with z = ...
 
+// *******************************************************************************
 
 // ************* Explain Block Scoping VS Function Scoping?
-
-// var vs let?
 
 // var vs. let
 // The var keyword behaves differently in function scopes and block scopes. A variable declared with var in a function scope can’t be accessed outside that function scope.
@@ -134,8 +140,7 @@ function iHaveScope() {
   }
 }
 
-
-
+// *******************************************************************************
 
 // ************* Explain a closure?
 
@@ -143,5 +148,6 @@ function iHaveScope() {
 
 
 
+// *******************************************************************************
 
 // *************  are semi-colons important in javascript? 
