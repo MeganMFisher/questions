@@ -225,3 +225,39 @@ $(document).ready(function() {
     //ajax call here
   })
 })
+
+
+
+// iffy
+
+//palindrome
+
+isPalindrome = (word) => {
+    var forwards = word
+    var backwards = word
+    backwards = backwards.split('').reverse().join('')
+
+
+    if ( forwards === backwards ) {
+      return 'true'
+    } else {
+      return 'false'
+    }
+  }
+  
+isPalindrome('racecar')
+
+or 
+
+isPalindrome = (word) => {
+    var forwards = word
+    var backwards = word
+    backwards = backwards.split('').reverse().join('')
+  
+  return (forwards === backwards ) ? true: false;
+  
+  }
+  
+  
+  
+isPalindrome('racecar')
