@@ -261,3 +261,80 @@ isPalindrome = (word) => {
   
   
 isPalindrome('racecar')
+
+
+// function func() {
+//   return arguments.callee
+// }
+
+// func()
+
+
+
+// var x = []
+
+// console.log(typeof x)
+
+
+
+
+// function hmmm() {
+// if('luck' > 'Work') {
+//   return true;
+// } else {
+//   return false
+// }
+// }
+
+// hmmm()
+
+
+
+
+// var a = 10
+// var b = a++
+// console.log(a)
+// console.log(b)
+
+
+
+// var a = 10
+// var b = ++a
+// console.log(a)
+// console.log(b)
+
+
+
+// var a = true
+// var b = false
+// a++; b++
+// console.log(a)
+// console.log(b)
+
+
+
+// var a = new Array(3)
+// a[0] = 'Hello'
+// a[1] = '3'
+// a[2] = 100
+// console.log(a)
+
+
+
+// console.log(isFinite(6/3))
+// console.log(isFinite(4/0))
+// console.log(isFinite(Math.sqrt(-9)))
+// console.log(isFinite(9))
+
+
+
+// var a = new Array('red', 'green', 'blue')
+// a.push('cyan', 'magenta')
+// console.log(a)
+
+
+
+// var a = null
+// var b
+// console.log(a)
+// console.log(b)
